@@ -1,4 +1,4 @@
-Docker container with PHP, Composer, Node.js and NPM
+Docker image with PHP, Composer, Node.js and NPM
 ===
 
 Using php 7.3 cli, composer 1.8.5, node 12
