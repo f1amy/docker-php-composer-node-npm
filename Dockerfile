@@ -1,4 +1,4 @@
-FROM php:7.3-cli
+FROM php:7.4-cli
 
 RUN apt-get update && apt-get install -y \
   --no-install-recommends git zip unzip \
@@ -14,7 +14,7 @@ RUN chmod +x /tmp/install-composer.sh
 RUN /tmp/install-composer.sh
 RUN rm /tmp/install-composer.sh
 
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get install -y \
   --no-install-recommends nodejs \
   && rm -rf /var/lib/apt/lists/*
